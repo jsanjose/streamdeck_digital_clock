@@ -1,0 +1,18 @@
+{
+    "Description": "No te retrases nunca con el reloj digital.",
+    "Name": "Reloj digital",
+    "es.jsj.clock.action": {
+        "Name": "Reloj digital",
+        "Tooltip": "Muestra un bonito reloj digital"
+    },
+
+    "Localization": {
+        "Face": "Esfera",
+        "Black": "Negra",
+        "Blue": "Azul",
+        "Blueish": "Azulada",
+        "Green": "Verde",
+        "Red": "Roja",
+        "White": "Blanca"
+    }
+}

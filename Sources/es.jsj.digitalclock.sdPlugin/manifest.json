@@ -1,0 +1,33 @@
+{
+    "Actions": [{
+        "Icon": "action/images/actionimage",
+        "Name": "Digital Clock",
+        "States": [{
+            "Image": "action/images/image"
+        }],
+        "SupportedInMultiActions": false,
+        "Tooltip": "Show a nice digital clock",
+        "UUID": "es.jsj.digitalclock.action"
+    }],
+    "SDKVersion": 2,
+    "Author": "JSJ",
+    "CodePath": "index.html",
+    "PropertyInspectorPath": "propertyinspector/index.html",
+    "Description": "Never be late with the Digital Clock.",
+    "Name": "Digital Clock",
+    "Icon": "pluginIcon",
+    "URL": "https://www.elgato.com/gaming/stream-deck",
+    "Version": "1.0",
+    "OS": [{
+            "Platform": "mac",
+            "MinimumVersion": "10.11"
+        },
+        {
+            "Platform": "windows",
+            "MinimumVersion": "10"
+        }
+    ],
+    "Software": {
+        "MinimumVersion": "4.1"
+    }
+}
