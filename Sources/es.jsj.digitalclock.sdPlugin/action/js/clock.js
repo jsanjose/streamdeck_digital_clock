@@ -76,7 +76,7 @@ function Clock(cnv) {
 
     function drawClock() {
         var date  = new Date();
-        //var seconds = date.getSeconds();
+        var seconds = date.getSeconds();
         var minutes = date.getMinutes()
         var hour = date.getHours();
         var hhmm = formatNumber(hour) + formatNumber(minutes);
@@ -92,6 +92,7 @@ function Clock(cnv) {
 
         var dX = l;
         var dY = (cnv.height - digitHeight) / 2;
+        var pointColor = colors.lineOn;
         for(var d = 0; d < 4; d++) {
             var n = hhmm.substr(d, 1);
             var seg = segments[n];
@@ -108,16 +109,19 @@ function Clock(cnv) {
                 ctx.stroke();
             }
             dX += digitWidth + digitHorizSpace;
+            /* separation points */
             if(d == 1) {
+                pointColor = colors.lineOn;
+                if((seconds % 2) == 0) pointColor = colors.lineOff;
                 for(var i = 0; i < points.length; i++) {
                     var x1 = points[i][0] + (l/2) + dX;
                     var y1 = points[i][1] + dY;
                     var x2 = l;
                     var y2 = l;
-                    ctx.strokeStyle = colors.lineOn;
+                    ctx.fillStyle = pointColor;
                     ctx.beginPath();
                     ctx.rect(x1, y1, x2, y2);
-                    ctx.fill();
+                    ctx.fillRect(x1, y1, x2, y2);
                 }
                 dX += digitHorizSpace;
             }
