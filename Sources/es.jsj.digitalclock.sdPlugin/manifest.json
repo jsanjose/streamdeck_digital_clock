@@ -17,7 +17,7 @@
     "Name": "Digital Clock",
     "Icon": "pluginIcon",
     "URL": "https://www.elgato.com/gaming/stream-deck",
-    "Version": "1.0",
+    "Version": "1.2",
     "OS": [{
             "Platform": "mac",
             "MinimumVersion": "10.11"

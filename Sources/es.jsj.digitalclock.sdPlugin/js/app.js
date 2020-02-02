@@ -187,7 +187,8 @@ function DigitalClock(jsonObj) {
         clockface = newClockFace;
         demo = clockface.demo || isDemo;
         clock.setColors(clockface.colors);
-        clockface.text !== true && $SD.api.setTitle(context, '', null);
+        //clockface.text !== true && $SD.api.setTitle(context, '', null);
+        clockface.text = "";
         drawClock();
     }
 
